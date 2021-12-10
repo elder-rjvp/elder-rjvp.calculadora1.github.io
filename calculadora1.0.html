@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>calculadora</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    </head>
+    <body>
+
+    <div id = "entrada" class="entrada">
+        <p><input type="number" name="entrada" id="entrada" onkeyup="escreverTexto(this);"/></p>
+        <!--placeholder="Digite o Valor" -->
+        <div id="cal" class="cal">
+        
+        <p><button class="pmt btn-primary texto" >PMT</button>
+            <span id="resultado_pmt">  </span></p>
+        <p><button class="vp btn-primary texto" >VP</button>
+            <span id="resultado_vp">  </span></p>
+        <p><button class="vf btn-primary texto">VF</button>
+            <span id="resultado_vf">  </span></p>
+        <p><button class="n btn-primary texto">n</button>
+            <span id="resultado_n">  </span></p>
+        <p><button class="i btn-primary texto">i</button>
+            <span id="resultado_i">  </span></p>
+
+        <p><button class="sinal btn-primary texto">+/-</button>
+            <button class="limpar btn-primary texto">C</button>
+            <button class="decimal btn-primary texto">0,?</button>
+            <span id="resultado_decimal">  </span></p>
+
+        <p><button class="btn btn-primary texto">enter</button>
+            <span id="resultado">  </span></p>
+        </div>
+    </div>
+    
+    <script src="calculadora.js"></script>
+
+</body>
+
+</html>
